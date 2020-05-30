@@ -1,0 +1,88 @@
+1.Write a program to check if a given number is Positive, Negative, or Zero
+import java.util.*;
+ 
+class PosNegZero
+{
+    public static void main(String []s)
+    {
+        int num;
+        if(num>0)
+            System.out.println(num + " is POSITIVE NUMBER.");
+        else if(num<0)
+            System.out.println(num + " is NEGATIVE NUMBER.");
+        else
+            System.out.println("IT's ZERO.");
+         
+    }
+}
+
+2.Write a program  to check whether the number is even or odd.
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
+
+3.Write a program to check if the program has received command line arguments or not. If the program has not received the values then print "No Values", else print all the values in a single line separated by ,(comma).
+
+class Game
+{   
+    public static void main(String args[])
+    {
+        if(args = null){
+            System.out.println(“No Values”);
+        }else{
+            System.out.println(args[0] + ” ,”);  
+            System.out.println(args[1] );
+        }
+    }
+}
+
+4.Initialize two character variables in a program and display the characters in alphabetical order.
+class alphabet
+{
+    public static void main (String[] args) 
+    {
+        char it1='a';
+        char it2='b';
+        if (it1>it2)
+            System.out.println(it2+" , "+it1);
+        
+        else
+            System.out.println(it1+" , "+it2);
+    }
+    }
+
+5.Initialize a character variable in a program and if the value is alphabet then print "Alphabet" if it’s a number then print "Digit" and for other characters print "Special Character" If Statement
+  class Character {
+public static void main(String args[ ])
+{
+    Scanner scanner=new Scanner(System.in);
+    char char1 =scanner.next( ).charAt(0);
+    if(char1>=48 && char1<=57)
+    {
+        System.out.print("Digit");
+
+    }
+    else if((char1>='65' && char1<='90')||(char1>='97' && char1<='122'))
+    {
+        System.out.print(" Alphabet");
+    }
+    else
+    {
+        System.out.print("special character");
+
+    }
+}
